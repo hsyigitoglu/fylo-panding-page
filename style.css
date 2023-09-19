@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* fonts */
+    --head-font:"Raleway",sans-serif;
+    --body-font:"Open Sans", sans-serif;
+    /* colors */
+    --v-dark-blue: hsl(243, 87%, 12%);
+    --desat-blue:hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --mode-cyan:hsl(170, 45%, 43%);
+    --light-gray-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+body{
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--v-dark-blue);
+    /* min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+p{
+    margin: 0;
+    letter-spacing: 1.10px;
+    font-weight: 600;
+    max-width: 600px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--head-font);
+    font-weight: 700;
+    color: var(--v-dark-blue);
+}
+a{
+    text-decoration: none;
+    color: var(--light-gray-blue);
+}
+.navbar{
+    padding: 50px 100px;
+}
+.navbar-nav{
+    gap:35px;
+    flex-direction: row;
+}
+header .row{
+    align-items: center;
+    margin-bottom: 150px;
+}
+header .col-lg-6{
+    padding: 0 100px;
+}
+header .col-lg-6 h1{
+    line-height: 60px;
+    max-width: 650px;
+}
+header .col-lg-6 img{
+    max-width: 100%;
+}
+header .col-lg-6 .type{
+    margin-top: 25px;
+}
+header .col-lg-6 input{
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 20px;
+}
+header .col-lg-6 button{
+    background-color: var(--bright-blue);
+    color: white;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+.testimonials{
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding: 100px 100px;
+    
+}
+.testimonials img{
+    max-width: 100%;
+}
+.testimonials .button_property{
+    margin: 15px 0 50px;
+}
+.testimonials a{
+    color: var(--mode-cyan);
+    position: relative;
+}
+.testimonials a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    border: 1px solid var(--mode-cyan);
+}
+.testimonials .card{
+    background-color: white;
+    padding: 15px;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.testimonials .card .card-body .quotes{
+    width: 20px;
+    margin-bottom: 10px;
+}
+.testimonials .card .card-text{
+    font-size: 14px;
+    line-height: 25px;
+}
+.testimonials .card .card-body .testi-photo{
+    margin-left: 11px;
+    border-radius: 50%;
+    width: 45px;
+}
+.testimonials .card .row .col-6:first-child{
+    padding: 0;
+    display: contents;
+}
+.testimonials .card .author .row p:first-child{
+    font-size: 12px;
+    font-weight: 700;
+}
+.testimonials .card .author .row p:last-child{
+    font-size: 10px;
+}
+.contact{
+    background-color: var(--desat-blue);
+    padding: 100px;
+}
+.contact h2,
+.contact p{
+    color: white;
+}
+.contact p{
+    font-weight: 400;
+    max-width: 520px;
+    margin-top: 20px;
+}
+.contact input{
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    border: 0;
+}
+.contact button{
+    background-color: var(--bright-blue);
+    font-size: 15px;
+    color: white;
+    border: 0;
+    padding: 10px;
+    margin-top: 20px;
+    width: 200px;
+}
+footer{
+    background-color: var(--v-dark-blue);
+    color: var(--light-gray-blue);
+    padding: 100px;
+}
+footer img{
+    margin-bottom: 25px;
+}
+footer .d-flex{
+    margin-bottom: 20px;
+}
+footer .icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+}
+footer .linksOne{
+    flex-direction: column;
+}
+footer .linksOne a{
+    margin-bottom: 10px;
+}
+footer .social a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--light-gray-blue);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+footer .social .align i{
+    width: 14px;
+    height: 14px;
+}

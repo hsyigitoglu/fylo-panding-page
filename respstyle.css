@@ -1,0 +1,64 @@
+@media screen and (min-width: 1078px) and (max-width:1197px) {
+    header .col-lg-6 h1,
+    .testimonials h1{
+       font-size: 34px;
+       line-height: 55px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1077px) {
+    header .col-lg-6 h1,
+    .testimonials h1{
+       font-size: 28px;
+       line-height: 45px;
+    }
+}
+@media screen and (max-width:991px) {
+    header{
+        text-align: center;
+    }
+    header .row{
+        gap: 25px;
+    }
+    header .col-lg-6 .type{
+        flex-direction: column;
+        gap: 20px;
+    }
+    header .col-lg-6 .type button{
+        width: 100%;
+        max-width: 400px;
+    }
+    header .col-lg-6 h1{
+       line-height: 30px;
+       margin-bottom: 30px;
+    }
+    .testimonials{
+        gap: 25px;
+    }
+    .testimonials,
+    .contact{
+        text-align: center;
+    }
+    .testimonials .card{
+        margin: 0 auto;
+        text-align: start;
+    }
+    .contact p{
+        margin: 20px auto;
+    }
+    .contact input{
+        padding: 10px;
+        width: 100%;
+        max-width: 250px;
+        border: none;
+    }
+    .contact button{
+        width: 100%;
+        max-width: 250px;
+    }
+    footer .gapValue{
+        gap:40px;
+    }
+    footer .social {
+        justify-content: center;
+    }
+}
